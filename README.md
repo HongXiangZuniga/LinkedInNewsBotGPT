@@ -20,6 +20,7 @@ LinkedIn NewsBot es un proyecto que utiliza ChatGPT para generar publicaciones a
 4. Configurar .env:
     OPENAI_KEY=
     TOTAL_POST=
+    LANG=<LANG to post english o spanish>
 
 ## Contribuciones
 
