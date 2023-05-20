@@ -9,8 +9,8 @@ def main():
     totalPost = int(os.getenv('TOTAL_POST'))
     url = input("Enter the url\n")
     html = scrappingService.GetInfo(url)
-    TextGenerator = textGenerator(totalPost,os.getenv('OPENAI_KEY'),os.getenv('LANG'))
-    result = TextGenerator.getSummaries(html)
+    TextGenerator = textGenerator(totalPost,os.getenv('OPENAI_KEY'))
+    result = TextGenerator.getSummaries(html,os.getenv('LANGUAGE'))
     for i in range(len(result)):
         print(result[i])
 main()
