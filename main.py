@@ -12,5 +12,7 @@ def main():
     TextGenerator = textGenerator(totalPost,os.getenv('OPENAI_KEY'))
     result = TextGenerator.getSummaries(html,os.getenv('LANGUAGE'))
     for i in range(len(result)):
+        print(i," resume:\n")
         print(result[i])
+        print("\n")
 main()
